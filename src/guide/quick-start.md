@@ -110,15 +110,15 @@ While the global build works, we will be primarily using [ES modules](https://de
 
 Notice how we can import directly from `'vue'` in our code - this is made possible by the `<script type="importmap">` block, leveraging a native browser feature called [Import Maps](https://caniuse.com/import-maps). Import maps are currently only available in Chromium-based browsers, so we recommend using Chrome or Edge during the learning process. If your preferred browser does not support import maps yet, you can polyfill it with [es-module-shims](https://github.com/guybedford/es-module-shims).
 
-You can add entries for other dependencies to the import map - just make sure they point to the ES modules version of the library you intend to use.
+Bạn có thể thêm các dependency khác vào import-map - chỉ cần đảm bảo rằng nó trỏ đến đúng những ES module của thư viện mà bạn dự định sử dụng.
 
-:::tip Not for production
-The import-maps-based setup is meant for learning only - if you intend to use Vue without build tools in production, make sure to check out the [Production Deployment Guide](/guide/best-practices/production-deployment.html#without-build-tools).
+:::tip Không dùngg cho production
+Thiết lập import-maps-based chỉ dành cho mục đích học tập - nếu bạn dự định sử dụng Vue cho production mà không dùng công cụ hỗ trợ xây dựng, hãy xem thêm [Hướng dẫn triển khai Production](/guide/best-practices/production-deployment.html#without-build-tools).
 :::
 
-### Serving over HTTP
+### Cung cấp qua giao thức HTTP
 
-As we dive deeper into the guide, we may need to split our code into separate JavaScript files so that they are easier to manage. For example:
+Khi đi sâu hơn vào tài liệu hướng dẫn, chúng ta có thể cần phải chia code của mình thành những tệp JavaScript riêng biệt để dễ quản lý hơn. Ví dụ:
 
 ```html
 <!-- index.html -->
@@ -144,7 +144,7 @@ In order for this to work, you need to serve your HTML over the `http://` protoc
 
 You may have noticed that the imported component's template is inlined as a JavaScript string. If you are using VSCode, you can install the [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html) extension and prefix the strings with a `/*html*/` comment to get syntax highlighting for them.
 
-## Next Steps
+## Tiếp theo
 
 Bạn nêu đọc kĩ phần [Giới thiệu](/guide/introduction) trước khi bước qua phần tiếp theo.
 
